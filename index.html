@@ -4,6 +4,9 @@
 		<meta charset="utf-8"/>
 		<link href="css/styles.css" rel="stylesheet">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.scroll-to.js"></script>
+		<script src="js/main.js"></script>
 	</head>
 	<body>
 		<div class="header">
@@ -28,19 +31,19 @@
 					<div class="icon">
 						<i class="fa fa-ship"></i>
 					</div>
-					<p class="city"><a href="#">Санкт-Петербург</a></p>
+					<p class="city"><a href="#" class="scroll-to" data-target=".block13 table">Санкт-Петербург</a></p>
 					<p class="data">26 - 28 июня</p> 
 					<p class="name">Александр Песков</p>
 					<div class="icon">
 						<i class="fa fa-star"></i>
 					</div>
-					<p class="city">Самара</p>
+					<p class="city"><a href="#" class="scroll-to" data-target=".block14 table">Самара</a></p>
 					<p class="data">03 - 05 июля</p>
 					<p class="name">Константин Ловцов</p>
 					<div class="icon">
 						<i class="fa fa-anchor"></i>
 					</div>
-					<p class="city">Одесса</p>
+					<p class="city"><a href="#" class="scroll-to" data-target=".block16 table">Одесса</a></p>
 					<p class="data">03 - 05 июля</p>
 					<p class="name">Павел Двойнишников, <br>  Сабина Ефремова</p>
 					<div class="icon-bottom">
@@ -61,7 +64,7 @@
 			<!-- <div class="selection-trainer">
 				<p>Выбрать тренера</p>
 			</div> -->
-			<a href="#" class="sign-up">Выбрать тренера</a>
+			<a href="#" class="sign-up scroll-to" data-target=".block12 .photo-container">Выбрать тренера</a>
 		</section>
 		<section class="block3">
 			<div class="wrapper">
@@ -87,7 +90,9 @@
 		</section>
 		<section class="block5">
 			<h4>Вот как работают реинтеграции. Представьте, что <br> сможете делать так когда угодно</h4>
-			<div class="video"></div>
+			<div class="video">
+				<iframe width="620" height="430" src="http://zews.software-dowlatow.ru/mediaembed/cqB0O2QTa91435061421" frameborder="0" allowfullscreen></iframe>
+			</div>
 		</section>
 		<section class="block6">
 			<div class="wrapper with-icon">
@@ -103,7 +108,7 @@
 			<div class="DI-1">
 				<div class="wrapper">
 					<h6>А научиться самостоятельно проводить реинтеграции вы можете <br> на курсе «ДИ-1».</h6>
-					<a href="#" class="btn ghost">
+					<a href="#" class="btn ghost scroll-to" data-target=".block9 h2">
 						Узнать, что такое курс «ДИ-1»
 					</a>
 				</div>
@@ -123,7 +128,7 @@
 			<div class="course-DI1">
 				<div class="wrapper">
 					<h6>Единственный способ подняться на этот уровень (и получить шанс пойти выше, к ещё большим возможностям) – пройти курс «ДИ-1»</h6>
-					<a href="#" class="btn ghost">
+					<a href="#" class="btn ghost scroll-to"  data-target=".block9 h2">
 						Узнать, что такое курс «ДИ-1»
 					</a>
 				</div>
@@ -174,7 +179,7 @@
 		<section class="block12">
 			<div class="wrapper">
 				<h3>Выберите тренера, который научит вас делать то, что для всех остальных выглядит волшебством</h3>
-				<a class="item" href="#">
+				<a class="item scroll-to" data-target=".block13" href="#">
 					<div class="photo-container">
 						<p class="name">Александр Песков</p>
 						<div class="fader"></div>
@@ -182,7 +187,7 @@
 					</div>
 					<p class="slogan">"Всегда есть другой путь"</p>
 				</a>
-				<a class="item" href="#">
+				<a class="item scroll-to" data-target=".block14"  href="#">
 					<div class="photo-container">
 						<p class="name">Константин Ловцов</p>
 						<div class="fader"></div>
@@ -190,7 +195,7 @@
 					</div>
 					<p class="slogan">"Дух и материя - две стороны одного целого"</p>
 				</a>
-				<a class="item" href="#">
+				<a class="item scroll-to" data-target=".block15"  href="#">
 					<div class="photo-container">
 						<p class="name">Андрей Горбачёв</p>
 						<div class="fader"></div>
@@ -198,7 +203,7 @@
 					</div>
 					<p class="slogan">"Приноси пользу людям, получай от этого удовольствие и будет вам счастье"</p>
 				</a>
-				<a class="item" href="#">
+				<a class="item scroll-to" data-target=".block15 .n2"  href="#">
 					<div class="photo-container">
 						<p class="name">Олег Соколов</p>
 						<div class="fader"></div>
@@ -206,7 +211,7 @@
 					</div>
 					<p class="slogan">"Жизнь и цивилизация"</p>
 				</a>
-				<a class="item" href="#">
+				<a class="item scroll-to" data-target=".block16"  href="#">
 					<div class="photo-container">
 						<p class="name">Павел Двойнишников</p>
 						<div class="fader"></div>
@@ -214,7 +219,7 @@
 					</div>
 					<p class="slogan">"Жить. Проживать. Осознавать. Отпускать. Жить."</p>
 				</a>
-				<a class="item" href="#">
+				<a class="item scroll-to" data-target=".block16 .n2"  href="#">
 					<div class="photo-container">
 						<p class="name">Сабина Ефремова</p>
 						<div class="fader"></div>
@@ -272,7 +277,7 @@
 							</tr>
 						</tbody>
 					</table>
-					<a href="#" class="sign-up">Войти в группу Александра</a>
+					<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2039" target="_blank" class="sign-up">Войти в группу Александра</a>
 				</div>
 			</div>
 		</section>
@@ -432,11 +437,10 @@
 				<div class="clr"></div>
 				<div class="video">
 					<h3>ДИ - это то, что может делать каждый, а не только тот, кто обладает исключительными способностями</h3>
-					<div class="container">
-						
-					</div>
+					<iframe width="620" height="430" style="position:relative; left: 50%;
+  margin-left: -310px;" src="http://zews.software-dowlatow.ru/mediaembed/cqB0O2QTa91435061421" frameborder="0" allowfullscreen></iframe>
 				</div>
-				<div class="photo-container">
+				<div class="photo-container n2">
 					<img src="images/photos/15-02.jpg" alt="">
 				</div>
 				<div class="about">
@@ -466,9 +470,8 @@
 				</div>
 				<div class="video">
 					<h3>Природа многих наделяет даром исцелять. Но можно ли его получить через знания?</h3>
-					<div class="container">
-						
-					</div>
+					<iframe width="620" height="430" style="position:relative; left: 50%;
+  margin-left: -310px;" src="http://zews.software-dowlatow.ru/mediaembed/cqB0O2QTa91435061421" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 			<div class="schedule">
@@ -521,7 +524,7 @@
 					<h3>Реальный случай из практики</h3>
 					<p>В ходе сеанса некурящий клиент выдыхал дым от сигарет, <br> которые курила его мать во время беременности</p>
 				</div>
-				<div class="photo-container">
+				<div class="photo-container n2">
 					<img src="images/photos/16-02.jpg" alt="">
 				</div>
 				<div class="about">
@@ -574,8 +577,9 @@
 						</div>
 					</div>
 				</div>
-					<div class="clr"></div>
-					<div class="schedule">
+				<div class="clr"></div>
+				</div>
+				<div class="schedule">
 				<div class="wrapper">
 					<h3>Расписание тренингов ДИ-1<br> Павла Двойнишникова и <br> Сабины Ефремовой</h3>
 					<table>
@@ -601,19 +605,19 @@
 							</tr>
 						</tbody>
 					</table>
-					<a href="#" class="sign-up">Войти в группу Павла и Сабины</a>
+					<a href="http://www.dowlatow.ru/ak/ak_buy_goods.php?idg=2043" target="_blank" class="sign-up">Войти в группу Павла и Сабины</a>
 				</div>
 			</div>
 		</section>
 		<section class="footer">
 			<div class="menu-container">
 				<ul class="menu">
-					<li><a href="#">Что такое ДИ</a></li>
-					<li><a href="#">Как это работает</a></li>
-					<li class="up"><a href="#">Вверх</a></li>
-					<li><a href="#">ДИ-1</a></li>
-					<li><a href="#">Тренеры</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="#" class="scroll-to" data-target=".block1 h2">Что такое ДИ</a></li>
+					<li><a href="#" class="scroll-to" data-target=".block5">Как это работает</a></li>
+					<li class="up"><a href="#" class="scroll-to" data-target=".header">Вверх</a></li>
+					<li><a href="#" class="scroll-to" data-target=".block9 .wrapper">ДИ-1</a></li>
+					<li><a href="#" class="scroll-to" data-target=".block12 .photo-container">Тренеры</a></li>
+					<li><a href="#" class="scroll-to" data-target=".footer">Контакты</a></li>
 				</ul>
 			</div>
 			<div class="clr"></div>
