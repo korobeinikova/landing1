@@ -13,16 +13,112 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
 }
-/* line 14, styles.less */
+/* line 13, styles.less */
+ul.arrow-marked {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 16, styles.less */
 ul.arrow-marked li {
   padding-left: 30px;
-  background: url('../images/...') left top no-repeat;
+  min-height: 30px;
+  margin: 10px 0;
+  background: url('../images/li-arrow.png') left top no-repeat;
 }
-/* line 29, styles.less */
+/* line 23, styles.less */
+ul.circle-marked {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 26, styles.less */
+ul.circle-marked li {
+  padding-left: 50px;
+  min-height: 40px;
+  background: url('../images/li-circle.png') left top no-repeat;
+}
+/* line 32, styles.less */
+ul.check-marked {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 35, styles.less */
+ul.check-marked li {
+  padding-left: 50px;
+  min-height: 40px;
+  background: url('../images/li-check.png') left top no-repeat;
+}
+/* line 41, styles.less */
+.review {
+  font-size: 18px;
+  color: #8b7f8d;
+  line-height: 155%;
+}
+/* line 45, styles.less */
+.review i {
+  font-size: 30px;
+  color: #a550a2;
+}
+/* line 49, styles.less */
+.review p.date {
+  font-size: 13px;
+  color: #b256af;
+}
+/* line 53, styles.less */
+.review p.author {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  color: #a550a2;
+}
+/* line 60, styles.less */
+table {
+  border-collapse: collapse;
+  border: none;
+}
+/* line 65, styles.less */
+table thead tr th {
+  color: #582257;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+/* line 77, styles.less */
+table tbody tr td {
+  color: #8b7f8d;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 0;
+}
+/* line 86, styles.less */
+a.sign-up {
+  width: 250px;
+  margin: 20px auto;
+  background: #a550a2;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  padding: 10px 15px;
+  margin: auto;
+  display: block;
+}
+/* line 102, styles.less */
+a.sign-up:hover {
+  background: #832e80;
+}
+/* line 106, styles.less */
 div.header {
   background: #a550a2;
 }
-/* line 31, styles.less */
+/* line 108, styles.less */
 div.header .block-left {
   background: url('../images/block-left-bg.jpg') no-repeat center center;
   background-size: cover;
@@ -32,19 +128,19 @@ div.header .block-left {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-/* line 39, styles.less */
+/* line 116, styles.less */
 div.header .block-left .text {
   float: right;
   width: 60%;
   padding-top: 75px;
   padding-bottom: 147px;
 }
-/* line 44, styles.less */
+/* line 121, styles.less */
 div.header .block-left .text .logo {
   float: left;
   margin-right: 15px;
 }
-/* line 48, styles.less */
+/* line 125, styles.less */
 div.header .block-left .text h2 {
   color: #ffffff;
   font-size: 44px;
@@ -53,7 +149,7 @@ div.header .block-left .text h2 {
   text-align: left;
   margin: 0;
 }
-/* line 56, styles.less */
+/* line 133, styles.less */
 div.header .block-left .text p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 18px;
@@ -63,13 +159,13 @@ div.header .block-left .text p {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-/* line 65, styles.less */
+/* line 142, styles.less */
 div.header .block-left .text ul {
   float: left;
   padding: 0;
   margin: 0;
 }
-/* line 69, styles.less */
+/* line 146, styles.less */
 div.header .block-left .text ul li {
   color: rgba(255, 255, 255, 0.7);
   font-size: 18px;
@@ -82,13 +178,13 @@ div.header .block-left .text ul li {
   min-height: 61px;
   margin-bottom: 20px;
 }
-/* line 84, styles.less */
+/* line 161, styles.less */
 div.header .block-right {
   background: #a550a2;
   width: 39%;
   float: right;
 }
-/* line 88, styles.less */
+/* line 165, styles.less */
 div.header .block-right .text {
   float: left;
   width: 40%;
@@ -96,7 +192,7 @@ div.header .block-right .text {
   padding-bottom: 60px;
   padding-left: 140px;
 }
-/* line 94, styles.less */
+/* line 171, styles.less */
 div.header .block-right .text h5 {
   color: #ffffff;
   font-size: 20px;
@@ -107,7 +203,7 @@ div.header .block-right .text h5 {
   margin: 0;
   padding-bottom: 30px;
 }
-/* line 104, styles.less */
+/* line 181, styles.less */
 div.header .block-right .text .icon {
   font-family: Font Awesome;
   color: #653163;
@@ -118,21 +214,21 @@ div.header .block-right .text .icon {
   padding-top: 30px;
   padding-bottom: 15px;
 }
-/* line 117, styles.less */
+/* line 194, styles.less */
 div.header .block-right .text p {
   padding: 5px 0 5px 0;
   margin: 0;
 }
-/* line 120, styles.less */
+/* line 197, styles.less */
 div.header .block-right .text p a {
   text-decoration: underline;
   color: #fff;
 }
-/* line 123, styles.less */
+/* line 200, styles.less */
 div.header .block-right .text p a:hover {
   text-decoration: none;
 }
-/* line 127, styles.less */
+/* line 204, styles.less */
 div.header .block-right .text p.city {
   color: #ffffff;
   font-size: 18px;
@@ -140,7 +236,7 @@ div.header .block-right .text p.city {
   line-height: 17px;
   text-align: center;
 }
-/* line 134, styles.less */
+/* line 211, styles.less */
 div.header .block-right .text p.data {
   color: #f1bef0;
   font-size: 16px;
@@ -148,7 +244,7 @@ div.header .block-right .text p.data {
   line-height: 17px;
   text-align: center;
 }
-/* line 141, styles.less */
+/* line 218, styles.less */
 div.header .block-right .text p.name {
   color: #f1bef0;
   font-size: 16px;
@@ -156,18 +252,18 @@ div.header .block-right .text p.name {
   line-height: 17px;
   text-align: center;
 }
-/* line 149, styles.less */
+/* line 226, styles.less */
 div.header .block-right .text .icon-bottom {
   margin: auto;
   width: 55px;
   padding-top: 40px;
 }
-/* line 158, styles.less */
+/* line 235, styles.less */
 section.block1 {
   width: 960px;
   margin: auto;
 }
-/* line 161, styles.less */
+/* line 238, styles.less */
 section.block1 h2 {
   color: #582257;
   font-size: 37px;
@@ -176,7 +272,7 @@ section.block1 h2 {
   text-align: center;
   padding-top: 150px;
 }
-/* line 169, styles.less */
+/* line 246, styles.less */
 section.block1 div {
   color: #8b7f8d;
   font-size: 18px;
@@ -187,7 +283,7 @@ section.block1 div {
   padding-bottom: 160px;
   margin: 0;
 }
-/* line 178, styles.less */
+/* line 255, styles.less */
 section.block1 div span {
   color: #582257;
   font-size: 18px;
@@ -195,27 +291,27 @@ section.block1 div span {
   line-height: 30px;
   text-align: left;
 }
-/* line 185, styles.less */
+/* line 262, styles.less */
 section.block1 div.column-left {
   width: 50%;
   float: left;
 }
-/* line 189, styles.less */
+/* line 266, styles.less */
 section.block1 div.column-right {
   width: 50%;
   float: right;
 }
-/* line 193, styles.less */
+/* line 270, styles.less */
 section.block1 div.clr {
   padding: 0;
 }
-/* line 198, styles.less */
+/* line 275, styles.less */
 section.block2 {
   background: #1e051d;
   padding-top: 200px;
   padding-bottom: 200px;
 }
-/* line 202, styles.less */
+/* line 279, styles.less */
 section.block2 h1 {
   color: #ffffff;
   font-size: 46px;
@@ -225,7 +321,7 @@ section.block2 h1 {
   padding-bottom: 70px;
   margin: 0;
 }
-/* line 211, styles.less */
+/* line 288, styles.less */
 section.block2 .selection-trainer {
   display: block;
   background: #a550a2;
@@ -235,7 +331,7 @@ section.block2 .selection-trainer {
   margin: auto;
   border-radius: 5px;
 }
-/* line 219, styles.less */
+/* line 296, styles.less */
 section.block2 .selection-trainer p {
   color: #ffffff;
   font-size: 22px;
@@ -245,23 +341,23 @@ section.block2 .selection-trainer p {
   padding-bottom: 10px;
   margin: 0;
 }
-/* line 230, styles.less */
+/* line 307, styles.less */
 section.block3 {
   background: url('../images/bg-block3.jpg') no-repeat;
   background-position: 90% bottom;
   padding-top: 195px;
   padding-bottom: 80px;
 }
-/* line 235, styles.less */
+/* line 312, styles.less */
 section.block3 .wrapper {
   width: 960px;
   margin: auto;
 }
-/* line 238, styles.less */
+/* line 315, styles.less */
 section.block3 .wrapper .text {
   width: 50%;
 }
-/* line 240, styles.less */
+/* line 317, styles.less */
 section.block3 .wrapper .text h4 {
   color: #582257;
   font-size: 30px;
@@ -269,7 +365,7 @@ section.block3 .wrapper .text h4 {
   line-height: 40px;
   text-align: left;
 }
-/* line 247, styles.less */
+/* line 324, styles.less */
 section.block3 .wrapper .text p {
   color: #8b7f8d;
   font-size: 16px;
@@ -277,17 +373,17 @@ section.block3 .wrapper .text p {
   line-height: 30px;
   text-align: left;
 }
-/* line 257, styles.less */
+/* line 334, styles.less */
 section.block4 {
   background: #f6f4f6;
 }
-/* line 259, styles.less */
+/* line 336, styles.less */
 section.block4 .wrapper {
   width: 960px;
   margin: auto;
   padding-bottom: 165px;
 }
-/* line 263, styles.less */
+/* line 340, styles.less */
 section.block4 .wrapper h3 {
   color: #582257;
   font-size: 35px;
@@ -298,7 +394,7 @@ section.block4 .wrapper h3 {
   padding-bottom: 100px;
   margin: 0;
 }
-/* line 273, styles.less */
+/* line 350, styles.less */
 section.block4 .wrapper p {
   color: #8b7f8d;
   font-size: 16px;
@@ -308,21 +404,21 @@ section.block4 .wrapper p {
   padding: 15px 0 15px 0;
   margin: 0;
 }
-/* line 281, styles.less */
+/* line 358, styles.less */
 section.block4 .wrapper p.left {
   width: 50%;
   float: left;
 }
-/* line 285, styles.less */
+/* line 362, styles.less */
 section.block4 .wrapper p.right {
   width: 50%;
   float: right;
 }
-/* line 292, styles.less */
+/* line 369, styles.less */
 section.block5 {
   padding-top: 150px;
 }
-/* line 294, styles.less */
+/* line 371, styles.less */
 section.block5 h4 {
   color: #582257;
   font-size: 30px;
@@ -330,22 +426,22 @@ section.block5 h4 {
   line-height: 46px;
   text-align: center;
 }
-/* line 306, styles.less */
+/* line 383, styles.less */
 section.block6 .wrapper {
   width: 960px;
   margin: auto;
 }
-/* line 309, styles.less */
+/* line 386, styles.less */
 section.block6 .wrapper.with-icon {
   background: url('../images/icon-block6.jpg') center right no-repeat;
   padding-top: 150px;
 }
-/* line 313, styles.less */
+/* line 390, styles.less */
 section.block6 .wrapper .left {
   float: left;
   width: 50%;
 }
-/* line 317, styles.less */
+/* line 394, styles.less */
 section.block6 .wrapper h4 {
   color: #582257;
   font-size: 30px;
@@ -355,7 +451,7 @@ section.block6 .wrapper h4 {
   margin: 0;
   padding-bottom: 30px;
 }
-/* line 326, styles.less */
+/* line 403, styles.less */
 section.block6 .wrapper p {
   color: #8b7f8d;
   font-size: 16px;
@@ -365,18 +461,18 @@ section.block6 .wrapper p {
   padding-bottom: 30px;
   margin: 0;
 }
-/* line 336, styles.less */
+/* line 413, styles.less */
 section.block6 .DI-1 {
   background: #1e051d;
 }
-/* line 338, styles.less */
+/* line 415, styles.less */
 section.block6 .DI-1 .wrapper {
   width: 960px;
   margin: auto;
   overflow: hidden;
   padding: 50px 0;
 }
-/* line 343, styles.less */
+/* line 420, styles.less */
 section.block6 .DI-1 .wrapper h6 {
   color: #ffffff;
   font-size: 18px;
@@ -387,7 +483,7 @@ section.block6 .DI-1 .wrapper h6 {
   float: left;
   width: 70%;
 }
-/* line 353, styles.less */
+/* line 430, styles.less */
 section.block6 .DI-1 .wrapper a.btn {
   float: right;
   display: block;
@@ -403,22 +499,22 @@ section.block6 .DI-1 .wrapper a.btn {
   padding: 10px 10px;
   margin-top: 10px;
 }
-/* line 372, styles.less */
+/* line 449, styles.less */
 section.block7 .wrapper {
   width: 960px;
   margin: auto;
 }
-/* line 375, styles.less */
+/* line 452, styles.less */
 section.block7 .wrapper.with-icon {
   background: url('../images/icon-block7.jpg') center right no-repeat;
   padding-top: 150px;
 }
-/* line 379, styles.less */
+/* line 456, styles.less */
 section.block7 .wrapper .left {
   float: left;
   width: 50%;
 }
-/* line 382, styles.less */
+/* line 459, styles.less */
 section.block7 .wrapper .left h4 {
   color: #582257;
   font-size: 30px;
@@ -428,7 +524,7 @@ section.block7 .wrapper .left h4 {
   padding-bottom: 30px;
   margin: 0;
 }
-/* line 391, styles.less */
+/* line 468, styles.less */
 section.block7 .wrapper .left p {
   color: #8b7f8d;
   font-size: 16px;
@@ -438,18 +534,18 @@ section.block7 .wrapper .left p {
   padding-bottom: 30px;
   margin: 0;
 }
-/* line 402, styles.less */
+/* line 479, styles.less */
 section.block7 .course-DI1 {
   background: #1e051d;
 }
-/* line 404, styles.less */
+/* line 481, styles.less */
 section.block7 .course-DI1 .wrapper {
   width: 960px;
   margin: auto;
   overflow: hidden;
   padding: 50px 0;
 }
-/* line 409, styles.less */
+/* line 486, styles.less */
 section.block7 .course-DI1 .wrapper h6 {
   color: #ffffff;
   font-size: 18px;
@@ -460,7 +556,7 @@ section.block7 .course-DI1 .wrapper h6 {
   float: left;
   width: 70%;
 }
-/* line 419, styles.less */
+/* line 496, styles.less */
 section.block7 .course-DI1 .wrapper a.btn {
   float: right;
   display: block;
@@ -476,13 +572,13 @@ section.block7 .course-DI1 .wrapper a.btn {
   padding: 10px 10px;
   margin-top: 10px;
 }
-/* line 438, styles.less */
+/* line 515, styles.less */
 section.block8 .wrapper {
   width: 960px;
   margin: auto;
   padding-top: 150px;
 }
-/* line 442, styles.less */
+/* line 519, styles.less */
 section.block8 .wrapper h4 {
   color: #582257;
   font-size: 30px;
@@ -491,7 +587,7 @@ section.block8 .wrapper h4 {
   line-height: 42px;
   text-align: center;
 }
-/* line 450, styles.less */
+/* line 527, styles.less */
 section.block8 .wrapper p {
   color: #8b7f8d;
   font-size: 18px;
@@ -499,20 +595,20 @@ section.block8 .wrapper p {
   line-height: 30px;
   text-align: center;
 }
-/* line 457, styles.less */
+/* line 534, styles.less */
 section.block8 .wrapper .icon {
   margin: auto;
   width: 55px;
   padding-top: 40px;
 }
-/* line 466, styles.less */
+/* line 543, styles.less */
 section.block9 .wrapper {
   width: 960px;
   margin: auto;
   padding-top: 150px;
   padding-bottom: 160px;
 }
-/* line 471, styles.less */
+/* line 548, styles.less */
 section.block9 .wrapper h2 {
   color: #582257;
   font-size: 37px;
@@ -522,17 +618,17 @@ section.block9 .wrapper h2 {
   margin: 0;
   padding-bottom: 90px;
 }
-/* line 480, styles.less */
+/* line 557, styles.less */
 section.block9 .wrapper .left {
   width: 50%;
   float: left;
 }
-/* line 484, styles.less */
+/* line 561, styles.less */
 section.block9 .wrapper .right {
   wight: 50%;
   float: right;
 }
-/* line 488, styles.less */
+/* line 565, styles.less */
 section.block9 .wrapper p {
   color: #8b7f8d;
   font-size: 18px;
@@ -542,19 +638,19 @@ section.block9 .wrapper p {
   margin: 0;
   padding-bottom: 30px;
 }
-/* line 499, styles.less */
+/* line 576, styles.less */
 section.block10 {
   background: url('../images/bg-block10.jpg') no-repeat center center;
   background-size: cover;
 }
-/* line 502, styles.less */
+/* line 579, styles.less */
 section.block10 .wrapper {
   width: 960px;
   margin: auto;
   padding-top: 380px;
   padding-bottom: 90px;
 }
-/* line 507, styles.less */
+/* line 584, styles.less */
 section.block10 .wrapper h1 {
   color: #ffffff;
   font-size: 45px;
@@ -564,7 +660,7 @@ section.block10 .wrapper h1 {
   margin: 0;
   padding-bottom: 30px;
 }
-/* line 516, styles.less */
+/* line 593, styles.less */
 section.block10 .wrapper p {
   color: #bdc3c7;
   font-size: 25px;
@@ -573,19 +669,19 @@ section.block10 .wrapper p {
   text-align: center;
   margin: 0;
 }
-/* line 524, styles.less */
+/* line 601, styles.less */
 section.block10 .wrapper .icon {
   margin: auto;
   width: 55px;
   padding-top: 220px;
 }
-/* line 532, styles.less */
+/* line 609, styles.less */
 section.block11 .wrapper {
-  width: 540px;
+  width: 630px;
   margin: auto;
   padding-top: 150px;
 }
-/* line 536, styles.less */
+/* line 613, styles.less */
 section.block11 .wrapper p {
   color: #8b7f8d;
   font-size: 18px;
@@ -593,13 +689,13 @@ section.block11 .wrapper p {
   line-height: 30px;
   text-align: left;
 }
-/* line 547, styles.less */
+/* line 624, styles.less */
 section.block12 .wrapper {
   width: 960px;
   margin: auto;
   overflow: hidden;
 }
-/* line 551, styles.less */
+/* line 628, styles.less */
 section.block12 .wrapper h3 {
   color: #582257;
   font-size: 30px;
@@ -609,7 +705,7 @@ section.block12 .wrapper h3 {
   padding-top: 150px;
   padding-bottom: 80px;
 }
-/* line 560, styles.less */
+/* line 637, styles.less */
 section.block12 .wrapper .item {
   float: left;
   width: 300px;
@@ -621,7 +717,7 @@ section.block12 .wrapper .item {
   color: #8b7f8d;
   height: 250px;
 }
-/* line 570, styles.less */
+/* line 647, styles.less */
 section.block12 .wrapper .item .photo-container {
   width: 300px;
   height: 180px;
@@ -631,7 +727,7 @@ section.block12 .wrapper .item .photo-container {
   -webkit-border-radius: 10px;
   overflow: hidden;
 }
-/* line 578, styles.less */
+/* line 655, styles.less */
 section.block12 .wrapper .item .photo-container p.name {
   position: absolute;
   width: 100%;
@@ -646,7 +742,7 @@ section.block12 .wrapper .item .photo-container p.name {
   margin: 0;
   padding-left: 15px;
 }
-/* line 593, styles.less */
+/* line 670, styles.less */
 section.block12 .wrapper .item .photo-container .fader {
   position: absolute;
   width: 100%;
@@ -655,13 +751,13 @@ section.block12 .wrapper .item .photo-container .fader {
   z-index: 1;
   display: none;
 }
-/* line 601, styles.less */
+/* line 678, styles.less */
 section.block12 .wrapper .item .photo-container img {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-/* line 607, styles.less */
+/* line 684, styles.less */
 section.block12 .wrapper .item p.slogan {
   color: #8b7f8d;
   font-size: 14px;
@@ -669,12 +765,100 @@ section.block12 .wrapper .item p.slogan {
   line-height: 21px;
   text-align: center;
 }
-/* line 614, styles.less */
+/* line 691, styles.less */
 section.block12 .wrapper .item:hover {
   border-color: #a550a2;
 }
-/* line 616, styles.less */
+/* line 693, styles.less */
 section.block12 .wrapper .item:hover .fader {
   display: block;
+}
+/* line 701, styles.less */
+section.block13 .wrapper {
+  width: 95%;
+  margin: auto;
+  max-width: 1300px;
+  padding-bottom: 140px;
+}
+/* line 706, styles.less */
+section.block13 .wrapper h3 {
+  margin-top: 70px;
+  color: #582257;
+  font-size: 35px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+}
+/* line 712, styles.less */
+section.block13 .wrapper .photo-container {
+  width: 475px;
+  float: left;
+  margin-right: 90px;
+}
+/* line 716, styles.less */
+section.block13 .wrapper .photo-container img {
+  width: 100%;
+  display: block;
+}
+/* line 721, styles.less */
+section.block13 .wrapper .about {
+  overflow: hidden;
+}
+/* line 724, styles.less */
+section.block13 .wrapper .about ul {
+  font-size: 20px;
+  color: #8b7f8d;
+  line-height: 180%;
+}
+/* line 728, styles.less */
+section.block13 .wrapper .about ul li {
+  margin: 20px 0;
+  background-position: left 9px;
+}
+/* line 734, styles.less */
+section.block13 .wrapper .results {
+  width: 80%;
+  margin: 125px auto 20px auto;
+}
+/* line 738, styles.less */
+section.block13 .wrapper .results ul li {
+  margin: 20px 0;
+  color: #8b7f8d;
+  font-size: 16px;
+  background-position: left 7px;
+}
+/* line 747, styles.less */
+section.block13 .schedule {
+  background: #f6f4f6;
+  padding-top: 40px;
+}
+/* line 750, styles.less */
+section.block13 .schedule .wrapper {
+  width: 95%;
+  max-width: 930px;
+  margin: auto;
+}
+/* line 754, styles.less */
+section.block13 .schedule .wrapper h3 {
+  display: block;
+  width: 100%;
+  background: url('../images/icon-microfon.png') left top no-repeat;
+  height: 270px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-left: 40%;
+  padding-top: 30px;
+}
+/* line 764, styles.less */
+section.block13 .schedule .wrapper table {
+  width: 100%;
+  margin-top: 80px;
+}
+/* line 767, styles.less */
+section.block13 .schedule .wrapper table td {
+  width: 33%;
+}
+/* line 771, styles.less */
+section.block13 .schedule .wrapper a.sign-up {
+  margin-top: 40px;
 }
 /*# sourceMappingURL=styles.css.map */

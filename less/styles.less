@@ -11,19 +11,96 @@ body{
 	font-family: "Open Sans", sans-serif;
 }
 ul.arrow-marked{
+	list-style:none;
+	padding-left: 0;
 	li{
-		padding-left: 30px;
-		background: url('../images/...') left top no-repeat;
+		  padding-left: 30px;
+		  min-height: 30px;
+		  margin: 10px 0;
+		background: url('../images/li-arrow.png') left top no-repeat;
 	}
 }
 ul.circle-marked{
+	list-style:none;
+	padding-left: 0;
 	li{
-
+		padding-left: 50px;
+		min-height:40px;
+		background: url('../images/li-circle.png') left top no-repeat;
 	}
 }
 ul.check-marked{
+	list-style:none;
+	padding-left: 0;
 	li{
-
+		padding-left: 50px;
+		min-height:40px;
+		background: url('../images/li-check.png') left top no-repeat;
+	}
+}
+.review{
+	font-size:18px;
+	color:#8b7f8d;
+	line-height:155%;
+	i{
+		font-size:30px;
+		color:#a550a2;
+	}
+	p.date{
+		font-size:13px;
+		color:#b256af;
+	}
+	p.author{
+		text-transform: uppercase;
+		font-size:18px;
+		font-weight:500;
+		color:#a550a2;
+	}
+}
+table{
+	border-collapse:collapse;
+	border:none;
+	thead{
+		tr{
+			th{
+				color:  #582257;
+				font-size: 18px; /* Приближение из-за подстановки шрифтов */
+				font-weight: 600;
+				text-align: center;
+				text-transform: uppercase;
+				padding: 10px 0;
+			}
+		}
+	}
+	tbody{
+		tr{
+			td{
+				color:  #8b7f8d;
+				font-size: 18px;
+				text-align: center;
+				padding: 10px 0;
+			}
+		}
+	}
+}
+a.sign-up{
+	width: 250px;
+	margin:20px auto;
+	background: #a550a2;
+	text-decoration: none;
+	color:#fff;
+	font-size:15px;
+	font-weight:600;
+	text-align: center;
+	border-radius:8px;
+	-moz-border-radius:8px;
+	-o-border-radius:8px;
+	-webkit-border-radius:8px;
+	padding: 10px 15px;
+	margin: auto;
+	display: block;
+	&:hover{
+		background: #a550a2 - #222;
 	}
 }
 div.header{
@@ -530,7 +607,7 @@ section.block10{
 }
 section.block11{
 	.wrapper{
-		width: 540px;
+		width: 630px;
 		margin: auto;
 		padding-top: 150px;
 		p{
@@ -616,6 +693,83 @@ section.block12{
 				.fader{
 					display: block;
 				}
+			}
+		}
+	}
+}
+section.block13{
+	.wrapper{
+		width:95%;
+		margin: auto;
+		max-width:1300px;
+		padding-bottom: 140px;
+		h3{
+			margin-top: 70px;
+			color:  #582257;
+			font-size: 35px; /* Приближение из-за подстановки шрифтов */
+			font-weight: 300;
+		}
+		.photo-container{
+			width: 475px;
+			float: left;
+			margin-right: 90px;
+			img{
+				width: 100%;
+				display: block;
+			}
+		}
+		.about{
+			overflow: hidden;
+			
+			ul{
+				font-size:20px;
+				color:#8b7f8d;
+				line-height:180%;
+				li{
+					margin:20px 0;
+					background-position:left 9px;
+				}
+			}
+		}
+		.results{
+			width: 80%;
+			margin:125px auto 20px auto;
+			ul{
+				li{
+					margin:20px 0;
+					color:#8b7f8d;
+					font-size: 16px;
+					background-position:left 7px;
+				}
+			}
+		}
+	}
+	.schedule{
+		background: #f6f4f6;
+		padding-top: 40px;
+		.wrapper{
+			width: 95%;
+			max-width:930px;
+			margin: auto;
+			h3{
+				display: block;
+				width: 100%;
+				background: url('../images/icon-microfon.png') left top no-repeat;
+				height:270px;
+				box-sizing:border-box;
+				-moz-box-sizing:border-box;
+				padding-left: 40%;
+				padding-top: 30px;
+			}
+			table{
+				width: 100%;
+				margin-top: 80px;
+				td{
+					width: 33%;
+				}
+			}
+			a.sign-up{
+				margin-top: 40px;
 			}
 		}
 	}
