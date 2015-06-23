@@ -22,7 +22,7 @@ ul.arrow-marked {
 ul.arrow-marked li {
   padding-left: 30px;
   min-height: 30px;
-  margin: 10px 0;
+  margin: 15px 0;
   background: url('../images/li-arrow.png') left top no-repeat;
 }
 /* line 23, styles.less */
@@ -961,5 +961,182 @@ section.block14 .schedule .wrapper table td {
 /* line 862, styles.less */
 section.block14 .schedule .wrapper a.sign-up {
   margin-top: 40px;
+}
+/* line 870, styles.less */
+section.block15 .wrapper {
+  width: 95%;
+  margin: auto;
+  max-width: 1300px;
+  padding-bottom: 20px;
+}
+/* line 875, styles.less */
+section.block15 .wrapper h3 {
+  margin-top: 70px;
+  color: #582257;
+  font-size: 35px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+}
+/* line 881, styles.less */
+section.block15 .wrapper .photo-container {
+  width: 475px;
+  float: left;
+  margin-right: 90px;
+}
+/* line 885, styles.less */
+section.block15 .wrapper .photo-container img {
+  width: 100%;
+  display: block;
+}
+/* line 890, styles.less */
+section.block15 .wrapper .about {
+  overflow: hidden;
+}
+/* line 893, styles.less */
+section.block15 .wrapper .about ul {
+  font-size: 20px;
+  color: #8b7f8d;
+  line-height: 180%;
+}
+/* line 897, styles.less */
+section.block15 .wrapper .about ul li {
+  margin: 20px 0;
+  background-position: left 9px;
+}
+/* line 903, styles.less */
+section.block15 .wrapper .video {
+  width: 940px;
+  margin: auto;
+  margin-top: 140px;
+  margin-bottom: 150px;
+}
+/* line 908, styles.less */
+section.block15 .wrapper .video h3 {
+  display: block;
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* line 915, styles.less */
+section.block15 .wrapper .video .container {
+  width: 940px;
+  height: 355px;
+  background: #a550a2;
+}
+/* line 921, styles.less */
+section.block15 .wrapper .specialization {
+  width: 940px;
+  margin: auto;
+  margin-top: 30px;
+}
+/* line 925, styles.less */
+section.block15 .wrapper .specialization ul {
+  font-size: 18px;
+  color: #8b7f8d;
+}
+/* line 931, styles.less */
+section.block15 .schedule {
+  background: #f6f4f6;
+  padding-top: 40px;
+  padding-bottom: 130px;
+}
+/* line 935, styles.less */
+section.block15 .schedule .wrapper {
+  width: 95%;
+  max-width: 930px;
+  margin: auto;
+}
+/* line 939, styles.less */
+section.block15 .schedule .wrapper h3 {
+  display: block;
+  width: 100%;
+  background: url('../images/icon-microfon.png') left top no-repeat;
+  height: 270px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-left: 40%;
+  padding-top: 30px;
+}
+/* line 949, styles.less */
+section.block15 .schedule .wrapper table {
+  width: 100%;
+  margin-top: 80px;
+}
+/* line 952, styles.less */
+section.block15 .schedule .wrapper table td {
+  width: 33%;
+}
+/* line 956, styles.less */
+section.block15 .schedule .wrapper a.sign-up {
+  margin-top: 40px;
+}
+/* line 962, styles.less */
+section.footer {
+  padding: 120px 0 50px 0;
+}
+/* line 964, styles.less */
+section.footer .menu-container {
+  float: right;
+  right: 50%;
+}
+/* line 967, styles.less */
+section.footer .menu-container ul.menu {
+  left: 50%;
+  float: left;
+  padding: 0;
+  list-style: none;
+}
+/* line 972, styles.less */
+section.footer .menu-container ul.menu li {
+  float: left;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 30px;
+}
+/* line 979, styles.less */
+section.footer .menu-container ul.menu li a {
+  color: #8b7f8d;
+  text-decoration: none;
+}
+/* line 982, styles.less */
+section.footer .menu-container ul.menu li a:hover {
+  text-decoration: underline;
+}
+/* line 986, styles.less */
+section.footer .menu-container ul.menu li.up {
+  top: -20px;
+}
+/* line 988, styles.less */
+section.footer .menu-container ul.menu li.up a {
+  display: block;
+  width: 55px;
+  padding-top: 65px;
+  background: url('../images/icon-up.png') top center no-repeat;
+}
+/* line 998, styles.less */
+section.footer .contacts {
+  text-align: center;
+}
+/* line 1000, styles.less */
+section.footer .contacts a,
+section.footer .contacts p {
+  color: #8b7f8d;
+  text-decoration: none;
+}
+/* line 1004, styles.less */
+section.footer .contacts a:hover {
+  text-decoration: underline;
+}
+/* line 1007, styles.less */
+section.footer .contacts p {
+  font-size: 14px;
+}
+/* line 1009, styles.less */
+section.footer .contacts p.support {
+  font-weight: bold;
+  font-size: 16px;
 }
 /*# sourceMappingURL=styles.css.map */
